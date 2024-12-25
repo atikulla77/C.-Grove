@@ -1,0 +1,90 @@
+html{
+  scrollbar-width: none;
+}
+
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+
+/* ```````Nav Mobile view Manu Bar Animation```````` */
+.NavberMViewAnimationLeft{
+  animation: mobileViewManuBarAnimationLeft 0.3s forwards;
+}
+@keyframes mobileViewManuBarAnimationLeft{
+  0%{
+    right: -250px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+.NavberMViewAnimationRight{
+  animation: mobileViewManuBarAnimationRight 0.3s forwards;
+}
+@keyframes mobileViewManuBarAnimationRight{
+  0%{
+    right: 0px;
+  }
+  100%{
+    right: -250px;
+  }
+}
+
+/* ```````````````````````Books`````````````````````` */
+.booksMoreInfoArrowAnimation:hover .booksMoreInfoArrow{
+  animation: MoreInfoArrowAnimation 0.3s forwards;
+}
+@keyframes MoreInfoArrowAnimation {
+  0%{
+    right: 28px;
+  }
+  100%{
+    right: 24px;
+  }
+}
+
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Protfolio````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+.portfolioCardImgInfo {
+  display: none;
+}
+.portfolioCard:hover .portfolioCardImgInfo {
+  display: flex;
+}
+
+/* ////////////-animation-\\\\\\\\\\\\\ */
+.protfolioCardAnimation {
+  animation: protfolioAnimation1 0.1s linear;
+}
+
+@keyframes protfolioAnimation1 {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
